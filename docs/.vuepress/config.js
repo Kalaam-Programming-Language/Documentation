@@ -16,7 +16,8 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/config/#head
    */
   head: [
-    ['meta', { name: 'theme-color', content: '#3eaf7c' }],
+    ['link', { rel: 'icon', href: `https://raw.githubusercontent.com/Kalaam-Programming-Language/Kalaam/master/src/assets/Logo.png` }],
+    ['meta', { name: 'theme-color', content: '#fbd31b' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
   ],
@@ -38,10 +39,6 @@ module.exports = {
         link: '/guide/',
       },
       {
-        text: 'Config',
-        link: '/config/'
-      },
-      {
         text: 'Github',
         link: 'https://github.com/Kalaam-Programming-Language/Kalaam'
       }
@@ -60,7 +57,13 @@ module.exports = {
           collapsable: false,
           children: [
             "commands/print.md",
-            "commands/input.md"
+            "commands/input.md",
+            "commands/if.md",
+            "commands/loop.md",
+            "commands/while.md",
+            "commands/length.md",
+            "commands/push.md",
+            "commands/create.md",
           ]
         },
         {
@@ -68,6 +71,12 @@ module.exports = {
           collapsable: false,
           children: [
             "examples/calculator.md",
+            "examples/create.md",
+            "examples/prime.md",
+            "examples/function.md",
+            "examples/fibonacci.md",
+            "examples/reverse.md",
+            "examples/road.md",
           ]
         }
       ],
